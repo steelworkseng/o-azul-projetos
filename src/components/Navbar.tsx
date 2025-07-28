@@ -45,8 +45,10 @@ const Navbar = () => {
               <Phone className="w-4 h-4" />
               <span>(11) 9999-9999</span>
             </div>
-            <Button variant="hero" size="sm">
-              Solicitar Orçamento
+            <Button variant="hero" size="sm" asChild>
+              <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                Solicitar Orçamento
+              </a>
             </Button>
           </div>
 
@@ -87,8 +89,10 @@ const Navbar = () => {
                 <span>contato@metalstruct.com.br</span>
               </div>
               <div className="px-3 py-2">
-                <Button variant="hero" className="w-full">
-                  Solicitar Orçamento
+                <Button variant="hero" className="w-full" asChild>
+                  <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                    Solicitar Orçamento
+                  </a>
                 </Button>
               </div>
             </div>
