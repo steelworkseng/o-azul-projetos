@@ -1,61 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { 
-  Users, 
-  Award, 
-  Clock, 
-  Target,
-  CheckCircle,
-  ArrowRight
-} from "lucide-react";
+import { Users, Award, Clock, Target, CheckCircle, ArrowRight } from "lucide-react";
 import aboutImage from "@/assets/about-team.jpg";
-
 const About = () => {
-  const stats = [
-    {
-      icon: Clock,
-      number: "15+",
-      label: "Anos de Experiência",
-      description: "Desde 2009 desenvolvendo projetos de excelência"
-    },
-    {
-      icon: Award,
-      number: "200+",
-      label: "Projetos Executados",
-      description: "Estruturas entregues com qualidade garantida"
-    },
-    {
-      icon: Users,
-      number: "50+",
-      label: "Clientes Satisfeitos",
-      description: "Empresas que confiam em nosso trabalho"
-    },
-    {
-      icon: Target,
-      number: "100%",
-      label: "Aprovação CREA",
-      description: "Todos os projetos seguem normas técnicas"
-    }
-  ];
-
-  const values = [
-    "Segurança em primeiro lugar",
-    "Qualidade técnica comprovada",
-    "Prazos rigorosamente cumpridos",
-    "Atendimento personalizado",
-    "Tecnologia de ponta",
-    "Sustentabilidade ambiental"
-  ];
-
-  return (
-    <section id="about" className="py-20 bg-secondary/30">
+  const stats = [{
+    icon: Clock,
+    number: "15+",
+    label: "Anos de Experiência",
+    description: "Desde 2009 desenvolvendo projetos de excelência"
+  }, {
+    icon: Award,
+    number: "200+",
+    label: "Projetos Executados",
+    description: "Estruturas entregues com qualidade garantida"
+  }, {
+    icon: Users,
+    number: "50+",
+    label: "Clientes Satisfeitos",
+    description: "Empresas que confiam em nosso trabalho"
+  }, {
+    icon: Target,
+    number: "100%",
+    label: "Aprovação CREA",
+    description: "Todos os projetos seguem normas técnicas"
+  }];
+  const values = ["Segurança em primeiro lugar", "Qualidade técnica comprovada", "Prazos rigorosamente cumpridos", "Atendimento personalizado", "Tecnologia de ponta", "Sustentabilidade ambiental"];
+  return <section id="about" className="py-20 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Sobre a MetalStruct
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Sobre a Steel Works</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Somos especialistas em projetos de engenharia para estruturas metálicas, 
             combinando experiência, tecnologia e inovação para entregar soluções excepcionais.
@@ -67,11 +42,7 @@ const About = () => {
           
           {/* Image */}
           <div className="relative">
-            <img
-              src={aboutImage}
-              alt="Equipe MetalStruct"
-              className="rounded-lg shadow-lg w-full h-[400px] object-cover"
-            />
+            <img src={aboutImage} alt="Equipe MetalStruct" className="rounded-lg shadow-lg w-full h-[400px] object-cover" />
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-lg"></div>
           </div>
 
@@ -94,12 +65,10 @@ const About = () => {
             </p>
 
             <div className="grid grid-cols-2 gap-4">
-              {values.map((value, index) => (
-                <div key={index} className="flex items-center space-x-2">
+              {values.map((value, index) => <div key={index} className="flex items-center space-x-2">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
                   <span className="text-sm text-muted-foreground">{value}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <Button variant="hero" size="lg" className="mt-6">
@@ -111,8 +80,7 @@ const About = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats.map((stat, index) => (
-            <Card key={index} className="text-center group hover:shadow-primary transition-all duration-300">
+          {stats.map((stat, index) => <Card key={index} className="text-center group hover:shadow-primary transition-all duration-300">
               <CardContent className="p-6">
                 <div className="bg-gradient-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <stat.icon className="w-8 h-8 text-white" />
@@ -121,8 +89,7 @@ const About = () => {
                 <div className="text-lg font-semibold text-foreground mb-2">{stat.label}</div>
                 <div className="text-sm text-muted-foreground">{stat.description}</div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Mission */}
@@ -137,8 +104,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
