@@ -26,50 +26,50 @@ const Contact = () => {
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Preparar dados do email
-    const emailData = {
-      to: "steelworksadm@gmail.com",
-      subject: `Nova solicitação de orçamento - ${formData.name}`,
-      body: `
-Nova solicitação de orçamento recebida:
+    try {
+      // Enviar dados para o webhook
+      await fetch("https://eoha0jv1ywtmpsg.m.pipedream.net", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        mode: "no-cors",
+        body: JSON.stringify({
+          nome: formData.name,
+          email: formData.email,
+          telefone: formData.phone,
+          empresa: formData.company || 'Não informado',
+          tipoDeProjeto: formData.projectType || 'Não informado',
+          mensagem: formData.message,
+          timestamp: new Date().toISOString(),
+          origem: "Steel Works Website"
+        }),
+      });
 
-Nome: ${formData.name}
-Email: ${formData.email}
-Telefone: ${formData.phone}
-Empresa: ${formData.company || 'Não informado'}
-Tipo de Projeto: ${formData.projectType || 'Não informado'}
-
-Mensagem:
-${formData.message}
-
----
-Enviado através do site Steel Works
-Data: ${new Date().toLocaleString('pt-BR')}
-      `.trim()
-    };
-
-    // Criar link mailto
-    const mailtoLink = `mailto:${emailData.to}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
-    
-    // Abrir cliente de email
-    window.location.href = mailtoLink;
-    
-    toast({
-      title: "Mensagem enviada!",
-      description: "Seu cliente de email foi aberto. Entraremos em contato em até 24 horas.",
-    });
-    
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      projectType: "",
-      message: ""
-    });
+      toast({
+        title: "Mensagem enviada!",
+        description: "Recebemos sua solicitação. Entraremos em contato em até 24 horas.",
+      });
+      
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        projectType: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("Erro ao enviar solicitação:", error);
+      toast({
+        title: "Erro ao enviar",
+        description: "Ocorreu um erro. Tente novamente ou entre em contato via WhatsApp.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
