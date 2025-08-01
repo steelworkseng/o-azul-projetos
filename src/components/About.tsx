@@ -52,13 +52,9 @@ const About = () => {
               Excelência em Engenharia Estrutural
             </h3>
             
-            <p className="text-muted-foreground">Fundada em 2009, a Steel Works nasceu com o objetivo de revolucionar o mercado de estruturas metálicas no Brasil. Nossa equipe é formada por engenheiros altamente qualificados e especializados em projetos complexos.</p>
+            <p className="text-muted-foreground">A Steel Works nasceu com o objetivo de revolucionar o mercado de estruturas metálicas no Brasil. Nossa equipe é formada por engenheiros altamente qualificados e especializados em projetos complexos.</p>
 
-            <p className="text-muted-foreground">
-              Utilizamos as mais modernas tecnologias de modelagem 3D e análise estrutural, 
-              garantindo precisão absoluta em cada cálculo. Nosso compromisso é entregar 
-              projetos que superem as expectativas em segurança, economia e prazo.
-            </p>
+            <p className="text-muted-foreground">Utilizamos as mais modernas tecnologias de modelagem 3D e análise estrutural, garantindo precisão absoluta em cada projeto. Nosso compromisso é entregar projetos que superem as expectativas em segurança, economia e prazo.</p>
 
             <div className="grid grid-cols-2 gap-4">
               {values.map((value, index) => <div key={index} className="flex items-center space-x-2">
