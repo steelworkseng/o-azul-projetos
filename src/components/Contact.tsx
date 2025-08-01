@@ -31,7 +31,7 @@ const Contact = () => {
     
     try {
       // Enviar dados para o webhook
-      await fetch("https://eoha0jv1ywtmpsg.m.pipedream.net", {
+      await fetch("https://eoqifbmolyjka5u.m.pipedream.net", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
