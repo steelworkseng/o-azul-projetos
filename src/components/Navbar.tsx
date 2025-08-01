@@ -24,7 +24,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <div className="text-2xl font-bold text-primary">Steel Works</div>
+            <img 
+              src="/lovable-uploads/db164524-fd91-4830-a4ee-c6ce9512f321.png" 
+              alt="Steel Works" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
