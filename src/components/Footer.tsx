@@ -1,42 +1,31 @@
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Facebook, 
-  Instagram, 
-  Linkedin,
-  Youtube
-} from "lucide-react";
-
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const services = [
-    "Estruturas Comerciais",
-    "Galpões Industriais", 
-    "Armazéns e Depósitos",
-    "Estruturas Residenciais",
-    "Cálculos Estruturais",
-    "Projetos Executivos"
-  ];
-
-  const quickLinks = [
-    { name: "Início", href: "#home" },
-    { name: "Serviços", href: "#services" },
-    { name: "Projetos", href: "#projects" },
-    { name: "Sobre", href: "#about" },
-    { name: "Contato", href: "#contact" }
-  ];
-
-  return (
-    <footer className="bg-primary text-white">
+  const services = ["Estruturas Comerciais", "Galpões Industriais", "Armazéns e Depósitos", "Estruturas Residenciais", "Cálculos Estruturais", "Projetos Executivos"];
+  const quickLinks = [{
+    name: "Início",
+    href: "#home"
+  }, {
+    name: "Serviços",
+    href: "#services"
+  }, {
+    name: "Projetos",
+    href: "#projects"
+  }, {
+    name: "Sobre",
+    href: "#about"
+  }, {
+    name: "Contato",
+    href: "#contact"
+  }];
+  return <footer className="bg-primary text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold">MetalStruct</div>
+            <div className="text-2xl font-bold">Steel Works</div>
             <p className="text-white/80 text-sm">
               Especialistas em projetos de engenharia para estruturas metálicas. 
               Mais de 15 anos transformando ideias em realidade com segurança e qualidade.
@@ -61,16 +50,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Nossos Serviços</h3>
             <ul className="space-y-2">
-              {services.map((service, index) => (
-                <li key={index}>
-                  <a 
-                    href="#services" 
-                    className="text-white/80 hover:text-accent transition-colors text-sm"
-                  >
+              {services.map((service, index) => <li key={index}>
+                  <a href="#services" className="text-white/80 hover:text-accent transition-colors text-sm">
                     {service}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -78,29 +62,18 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Links Rápidos</h3>
             <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.href} 
-                    className="text-white/80 hover:text-accent transition-colors text-sm"
-                  >
+              {quickLinks.map((link, index) => <li key={index}>
+                  <a href={link.href} className="text-white/80 hover:text-accent transition-colors text-sm">
                     {link.name}
                   </a>
-                </li>
-              ))}
+                </li>)}
               <li>
-                <a 
-                  href="#" 
-                  className="text-white/80 hover:text-accent transition-colors text-sm"
-                >
+                <a href="#" className="text-white/80 hover:text-accent transition-colors text-sm">
                   Política de Privacidade
                 </a>
               </li>
               <li>
-                <a 
-                  href="#" 
-                  className="text-white/80 hover:text-accent transition-colors text-sm"
-                >
+                <a href="#" className="text-white/80 hover:text-accent transition-colors text-sm">
                   Termos de Uso
                 </a>
               </li>
@@ -121,7 +94,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent" />
-                <div className="text-sm text-white/80">(11) 9999-9999</div>
+                <div className="text-sm text-white/80">(85) 98185-1924</div>
               </div>
               
               <div className="flex items-center space-x-3">
@@ -154,8 +127,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
