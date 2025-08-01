@@ -218,8 +218,10 @@ const Contact = () => {
                 <p className="text-sm mb-4 opacity-90">
                   Precisa de um orçamento urgente? Entre em contato via WhatsApp!
                 </p>
-                <Button variant="accent" size="sm" className="w-full">
-                  WhatsApp: (11) 9999-9999
+                <Button variant="accent" size="sm" className="w-full" asChild>
+                  <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                    WhatsApp: (85) 98185-1924
+                  </a>
                 </Button>
               </CardContent>
             </Card>

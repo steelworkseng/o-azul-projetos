@@ -95,9 +95,11 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-            Solicitar Orçamento Personalizado
-            <ArrowRight className="ml-2 w-5 h-5" />
+          <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
+            <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              Solicitar Orçamento Personalizado
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
           </Button>
         </div>
       </div>
