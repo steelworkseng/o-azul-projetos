@@ -28,10 +28,40 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Preparar dados do email
+    const emailData = {
+      to: "steelworksadm@gmail.com",
+      subject: `Nova solicitação de orçamento - ${formData.name}`,
+      body: `
+Nova solicitação de orçamento recebida:
+
+Nome: ${formData.name}
+Email: ${formData.email}
+Telefone: ${formData.phone}
+Empresa: ${formData.company || 'Não informado'}
+Tipo de Projeto: ${formData.projectType || 'Não informado'}
+
+Mensagem:
+${formData.message}
+
+---
+Enviado através do site Steel Works
+Data: ${new Date().toLocaleString('pt-BR')}
+      `.trim()
+    };
+
+    // Criar link mailto
+    const mailtoLink = `mailto:${emailData.to}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+    
+    // Abrir cliente de email
+    window.location.href = mailtoLink;
+    
     toast({
       title: "Mensagem enviada!",
-      description: "Entraremos em contato em até 24 horas.",
+      description: "Seu cliente de email foi aberto. Entraremos em contato em até 24 horas.",
     });
+    
     setFormData({
       name: "",
       email: "",
