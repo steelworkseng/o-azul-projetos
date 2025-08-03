@@ -4,19 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  Send,
-  MessageSquare,
-  Calculator
-} from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, MessageSquare, Calculator } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,16 +18,14 @@ const Contact = () => {
     projectType: "",
     message: ""
   });
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     try {
       // Enviar dados para o webhook
       await fetch("https://eoqifbmolyjka5u.m.pipedream.net", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
         mode: "no-cors",
         body: JSON.stringify({
@@ -46,14 +37,12 @@ const Contact = () => {
           mensagem: formData.message,
           timestamp: new Date().toISOString(),
           origem: "Steel Works Website"
-        }),
+        })
       });
-
       toast({
         title: "Mensagem enviada!",
-        description: "Recebemos sua solicitação. Entraremos em contato em até 24 horas.",
+        description: "Recebemos sua solicitação. Entraremos em contato em até 24 horas."
       });
-      
       setFormData({
         name: "",
         email: "",
@@ -67,47 +56,38 @@ const Contact = () => {
       toast({
         title: "Erro ao enviar",
         description: "Ocorreu um erro. Tente novamente ou entre em contato via WhatsApp.",
-        variant: "destructive",
+        variant: "destructive"
       });
     }
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "Telefone",
-      content: "(11) 9999-9999",
-      subtitle: "WhatsApp disponível"
-    },
-    {
-      icon: Mail,
-      title: "E-mail",
-      content: "contato@metalstruct.com.br",
-      subtitle: "Resposta em até 24h"
-    },
-    {
-      icon: MapPin,
-      title: "Endereço",
-      content: "Av. Paulista, 1000 - São Paulo/SP",
-      subtitle: "CEP: 01310-100"
-    },
-    {
-      icon: Clock,
-      title: "Horário",
-      content: "Segunda a Sexta: 8h às 18h",
-      subtitle: "Sábado: 8h às 12h"
-    }
-  ];
-
-  return (
-    <section id="contact" className="py-20">
+  const contactInfo = [{
+    icon: Phone,
+    title: "Telefone",
+    content: "(11) 9999-9999",
+    subtitle: "WhatsApp disponível"
+  }, {
+    icon: Mail,
+    title: "E-mail",
+    content: "contato@metalstruct.com.br",
+    subtitle: "Resposta em até 24h"
+  }, {
+    icon: MapPin,
+    title: "Endereço",
+    content: "Av. Paulista, 1000 - São Paulo/SP",
+    subtitle: "CEP: 01310-100"
+  }, {
+    icon: Clock,
+    title: "Horário",
+    content: "Segunda a Sexta: 8h às 18h",
+    subtitle: "Sábado: 8h às 12h"
+  }];
+  return <section id="contact" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -137,75 +117,33 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="name">Nome Completo *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        placeholder="Seu nome completo"
-                      />
+                      <Input id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="Seu nome completo" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">E-mail *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        placeholder="seu@email.com"
-                      />
+                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required placeholder="seu@email.com" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="phone">Telefone *</Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        required
-                        placeholder="(11) 99999-9999"
-                      />
+                      <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} required placeholder="(11) 99999-9999" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="company">Empresa</Label>
-                      <Input
-                        id="company"
-                        name="company"
-                        value={formData.company}
-                        onChange={handleChange}
-                        placeholder="Nome da empresa"
-                      />
+                      <Input id="company" name="company" value={formData.company} onChange={handleChange} placeholder="Nome da empresa" />
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="projectType">Tipo de Projeto</Label>
-                    <Input
-                      id="projectType"
-                      name="projectType"
-                      value={formData.projectType}
-                      onChange={handleChange}
-                      placeholder="Ex: Galpão industrial, Edifício comercial, Residencial..."
-                    />
+                    <Input id="projectType" name="projectType" value={formData.projectType} onChange={handleChange} placeholder="Ex: Galpão industrial, Edifício comercial, Residencial..." />
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="message">Mensagem *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={5}
-                      placeholder="Descreva seu projeto, área aproximada, localização e outras informações relevantes..."
-                    />
+                    <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={5} placeholder="Descreva seu projeto, área aproximada, localização e outras informações relevantes..." />
                   </div>
 
                   <Button type="submit" variant="hero" size="lg" className="w-full text-lg">
@@ -221,24 +159,7 @@ const Contact = () => {
           <div className="space-y-6">
             
             {/* Contact Cards */}
-            <div className="space-y-4">
-              {contactInfo.map((info, index) => (
-                <Card key={index} className="group hover:shadow-accent transition-all duration-300">
-                  <CardContent className="p-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="bg-gradient-primary p-2 rounded-lg">
-                        <info.icon className="w-5 h-5 text-white" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-foreground">{info.title}</div>
-                        <div className="text-sm text-primary font-medium">{info.content}</div>
-                        <div className="text-xs text-muted-foreground">{info.subtitle}</div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            
 
             {/* Quick Actions */}
             <Card className="bg-gradient-primary text-white">
@@ -279,8 +200,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

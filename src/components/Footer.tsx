@@ -99,7 +99,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent" />
-                <div className="text-sm text-white/80">contato@metalstruct.com.br</div>
+                <div className="text-sm text-white/80">steelworksadm@gmail.com</div>
               </div>
             </div>
 
@@ -119,11 +119,7 @@ const Footer = () => {
             <div className="text-sm text-white/60">
               © {currentYear} MetalStruct Engenharia. Todos os direitos reservados.
             </div>
-            <div className="flex items-center space-x-4 text-sm text-white/60">
-              <span>CREA/SP: 123.456.789</span>
-              <span>•</span>
-              <span>CNPJ: 12.345.678/0001-90</span>
-            </div>
+            
           </div>
         </div>
       </div>
