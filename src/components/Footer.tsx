@@ -87,8 +87,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-white/80">
-                  <div>Av. Paulista, 1000</div>
-                  <div>São Paulo/SP - CEP: 01310-100</div>
+                  <div>Aldeota</div>
+                  <div>Fortaleza, Ce</div>
                 </div>
               </div>
               
