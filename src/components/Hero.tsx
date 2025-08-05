@@ -19,25 +19,25 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Projetos de
-            <span className="block text-accent"> Engenharia </span>
-            para Estruturas Metálicas
+            Reduza <span className="text-accent">30% dos custos</span> com
+            <span className="block"> Estruturas Metálicas </span>
+            Certificadas
           </h1>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Desenvolvemos soluções completas em estruturas metálicas com excelência técnica, 
-            segurança e inovação. Mais de 15 anos transformando ideias em realidade.
+            Projetos aprovados pelo CREA em até 48h. Mais de 15 anos de experiência, 
+            200+ projetos entregues com garantia total de qualidade.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="accent" size="lg" className="text-lg px-8 py-4" asChild>
+            <Button variant="accent" size="lg" className="text-lg px-8 py-4 animate-pulse shadow-accent" asChild>
               <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-                Solicitar Orçamento
+                🎯 Orçamento GRATUITO - Últimas vagas Janeiro!
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
-              Ver Projetos
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary hover-scale">
+              📋 Ver Cases de Sucesso
             </Button>
           </div>
 
