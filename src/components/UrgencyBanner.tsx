@@ -7,22 +7,22 @@ const UrgencyBanner = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           
-          {/* Urgency Indicator */}
+          {/* Professional Indicator */}
           <div className="flex items-center justify-center space-x-2 mb-6">
-            <div className="bg-white/20 p-2 rounded-full animate-pulse">
+            <div className="bg-white/20 p-2 rounded-full">
               <Clock className="w-6 h-6" />
             </div>
-            <span className="text-lg font-semibold">⏰ OFERTA LIMITADA</span>
+            <span className="text-lg font-semibold">🏗️ CONSULTORIA ESPECIALIZADA</span>
           </div>
 
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            <span className="block">Últimas 5 vagas para</span>
-            <span className="text-accent-foreground">Janeiro 2025</span>
+            <span className="block">Projetos de Engenharia</span>
+            <span className="text-accent-foreground">com Garantia Total</span>
           </h2>
           
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Garanta seu projeto com <strong>15% de desconto</strong> + consultoria técnica gratuita. 
-            Orçamento aprovado em até 48 horas ou não cobramos nada!
+            Projetos estruturais aprovados pelo CREA com <strong>garantia de qualidade</strong> + consultoria técnica gratuita. 
+            Orçamento detalhado em até 48 horas com total transparência!
           </p>
 
           {/* Benefits Row */}
@@ -33,7 +33,7 @@ const UrgencyBanner = () => {
             </div>
             <div className="flex items-center justify-center space-x-3">
               <Zap className="w-6 h-6 text-accent-foreground" />
-              <span className="font-semibold">15% de desconto</span>
+              <span className="font-semibold">Preço competitivo</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
               <Zap className="w-6 h-6 text-accent-foreground" />
@@ -45,11 +45,11 @@ const UrgencyBanner = () => {
           <Button 
             variant="secondary" 
             size="lg" 
-            className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90 shadow-xl animate-pulse hover-scale"
+            className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90 shadow-xl hover-scale"
             asChild
           >
-            <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+quero+garantir+minha+vaga+com+15%25+de+desconto%21&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-              🔥 GARANTIR MINHA VAGA AGORA
+            <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+projeto+estrutural&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              🏗️ SOLICITAR ORÇAMENTO AGORA
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Button>
