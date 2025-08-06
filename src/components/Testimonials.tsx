@@ -33,7 +33,7 @@ const Testimonials = () => {
     name: "ABNT NBR",
     description: "Normas técnicas rigorosas"
   }, {
-    name: "200+ Projetos",
+    name: "50+ projetos",
     description: "Experiência comprovada"
   }];
   return <section className="py-20 bg-muted/30">
