@@ -26,10 +26,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="text-2xl font-bold">Steel Works</div>
-            <p className="text-white/80 text-sm">
-              Especialistas em projetos de engenharia para estruturas metálicas. 
-              Mais de 15 anos transformando ideias em realidade com segurança e qualidade.
-            </p>
+            <p className="text-white/80 text-sm">Especialistas em projetos de engenharia para estruturas metálicas. Mais de 5 anos transformando ideias em realidade com segurança e qualidade.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white/60 hover:text-accent transition-colors">
                 <Facebook className="w-5 h-5" />
