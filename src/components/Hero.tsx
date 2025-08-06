@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Award, Clock } from "lucide-react";
 import heroImage from "@/assets/hero-engineering.jpg";
-
 const Hero = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center">
+  return <section id="home" className="relative min-h-screen flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Projetos de Engenharia Metálica"
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Projetos de Engenharia Metálica" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/80 to-primary/70"></div>
       </div>
 
@@ -24,10 +18,7 @@ const Hero = () => {
             Certificadas
           </h1>
           
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Projetos aprovados pelo CREA em até 48h. Mais de 15 anos de experiência, 
-            200+ projetos entregues com garantia total de qualidade.
-          </p>
+          <p className="text-xl text-white/90 mb-8 leading-relaxed">Projetos aprovados pelo CREA em até 48h. Mais de 5 anos de experiência, 50+ projetos entregues com garantia total de qualidade.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button variant="accent" size="lg" className="text-lg px-8 py-4 shadow-accent" asChild>
@@ -82,8 +73,6 @@ const Hero = () => {
           <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-bounce"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
