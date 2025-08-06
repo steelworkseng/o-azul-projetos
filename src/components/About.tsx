@@ -5,12 +5,12 @@ import aboutImage from "@/assets/about-team.jpg";
 const About = () => {
   const stats = [{
     icon: Clock,
-    number: "15+",
+    number: "5+",
     label: "Anos de Experiência",
-    description: "Desde 2009 desenvolvendo projetos de excelência"
+    description: "Desenvolvendo projetos de excelência"
   }, {
     icon: Award,
-    number: "200+",
+    number: "50+",
     label: "Projetos Executados",
     description: "Estruturas entregues com qualidade garantida"
   }, {

@@ -18,7 +18,7 @@ const Hero = () => {
             Certificadas
           </h1>
           
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">Projetos aprovados pelo CREA em até 48h. Mais de 5 anos de experiência, 50+ projetos entregues com garantia total de qualidade.</p>
+          <p className="text-xl text-white/90 mb-8 leading-relaxed">Projetos aprovados pelo CREA em até 48h. Mais de 5 anos de experiência, mais de 50 projetos entregues com garantia total de qualidade.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button variant="accent" size="lg" className="text-lg px-8 py-4 shadow-accent" asChild>
@@ -59,7 +59,7 @@ const Hero = () => {
                 <Clock className="w-6 h-6 text-accent" />
               </div>
               <div>
-                <div className="font-semibold">15+ Anos</div>
+                <div className="font-semibold">5+ Anos</div>
                 <div className="text-sm text-white/70">Experiência</div>
               </div>
             </div>
