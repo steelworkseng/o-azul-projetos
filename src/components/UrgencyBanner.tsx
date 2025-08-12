@@ -20,14 +20,14 @@ const UrgencyBanner = () => {
           
           <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
             Projetos estruturais aprovados pelo CREA com <strong>garantia de qualidade</strong> + consultoria técnica gratuita. 
-            Orçamento detalhado em até 48 horas com total transparência!
+            Orçamento detalhado com total transparência!
           </p>
 
           {/* Benefits Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="flex items-center justify-center space-x-3">
               <Zap className="w-6 h-6 text-accent-foreground" />
-              <span className="font-semibold">Aprovação em 48h</span>
+              <span className="font-semibold">Aprovação rápida</span>
             </div>
             <div className="flex items-center justify-center space-x-3">
               <Zap className="w-6 h-6 text-accent-foreground" />
@@ -42,7 +42,7 @@ const UrgencyBanner = () => {
           {/* CTA */}
           <Button variant="secondary" size="lg" className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90 shadow-xl hover-scale" asChild>
             <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+projeto+estrutural&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-              🏗️ SOLICITAR ORÇAMENTO AGORA
+              SOLICITAR ORÇAMENTO AGORA
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Button>
