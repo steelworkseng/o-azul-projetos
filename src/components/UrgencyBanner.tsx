@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Clock, ArrowRight, Zap } from "lucide-react";
-
 const UrgencyBanner = () => {
-  return (
-    <section className="bg-gradient-accent text-white py-16">
+  return <section className="bg-gradient-accent text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           
@@ -12,7 +10,7 @@ const UrgencyBanner = () => {
             <div className="bg-white/20 p-2 rounded-full">
               <Clock className="w-6 h-6" />
             </div>
-            <span className="text-lg font-semibold">🏗️ CONSULTORIA ESPECIALIZADA</span>
+            <span className="text-lg font-semibold"> CONSULTORIA ESPECIALIZADA</span>
           </div>
 
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -42,25 +40,16 @@ const UrgencyBanner = () => {
           </div>
 
           {/* CTA */}
-          <Button 
-            variant="secondary" 
-            size="lg" 
-            className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90 shadow-xl hover-scale"
-            asChild
-          >
+          <Button variant="secondary" size="lg" className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90 shadow-xl hover-scale" asChild>
             <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+projeto+estrutural&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
               🏗️ SOLICITAR ORÇAMENTO AGORA
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Button>
 
-          <p className="text-sm mt-4 opacity-80">
-            ⚡ Resposta imediata no WhatsApp • Sem compromisso
-          </p>
+          <p className="text-sm mt-4 opacity-80"> Resposta imediata no WhatsApp • Sem compromisso</p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default UrgencyBanner;
