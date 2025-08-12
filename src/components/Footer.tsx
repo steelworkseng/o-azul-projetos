@@ -113,9 +113,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-white/60">
-              © {currentYear} MetalStruct Engenharia. Todos os direitos reservados.
-            </div>
+            
             
           </div>
         </div>
