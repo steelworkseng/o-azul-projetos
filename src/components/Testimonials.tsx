@@ -12,7 +12,7 @@ const Testimonials = () => {
     name: "Marina Costa",
     company: "",
     role: "Engenheira Civil",
-    content: "Projeto estrutural impecável. Aprovação na prefeitura sem nenhuma pendência. Equipe técnica muito competente.",
+    content: "Precisei fazer um mezanino e fui bem atendido quanto a rapidez no orçamento e preço compatível com mercado",
     rating: 5,
     project: "Edifício Comercial 15 andares"
   }, {
