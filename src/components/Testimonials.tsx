@@ -21,7 +21,7 @@ const Testimonials = () => {
     role: "Proprietário",
     content: "A Steel Works entregou um resultado excepcional no projeto de substituição das telhas do nosso galpão por telhas sanduíche. O projeto é de alta qualidade, melhorou e facilitou a montagem e instalação do material.",
     rating: 5,
-    project: "Cobertura Industrial 1.800m²"
+    project: "Projeto de telhas 1.236,00 m²"
   }];
   const certifications = [{
     name: "CREA Ativo",
