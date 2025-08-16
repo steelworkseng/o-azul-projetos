@@ -14,7 +14,7 @@ const Testimonials = () => {
     role: "Engenheira Civil",
     content: "Precisei fazer um mezanino e fui bem atendido quanto a rapidez no orçamento e preço compatível com mercado",
     rating: 5,
-    project: "Edifício Comercial 15 andares"
+    project: "Mezanino residencial de 32,6 m²"
   }, {
     name: "Roberto Fernandes",
     company: "",
