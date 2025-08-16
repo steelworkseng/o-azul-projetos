@@ -3,21 +3,21 @@ import { Star, Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [{
     name: "Carlos Silva",
-    company: "Indústrias Silva LTDA",
+    company: "",
     role: "Diretor de Operações",
     content: "A Steel Works entregou nosso galpão industrial 20% mais rápido que o prazo. Excelente qualidade e custo-benefício excepcional.",
     rating: 5,
     project: "Galpão Industrial 2.500m²"
   }, {
     name: "Marina Costa",
-    company: "Costa Empreendimentos",
+    company: "",
     role: "Engenheira Civil",
     content: "Projeto estrutural impecável. Aprovação na prefeitura sem nenhuma pendência. Equipe técnica muito competente.",
     rating: 5,
     project: "Edifício Comercial 15 andares"
   }, {
     name: "Roberto Fernandes",
-    company: "Construtora RF",
+    company: "",
     role: "Proprietário",
     content: "A Steel Works entregou um resultado excepcional no projeto de substituição das telhas do nosso galpão por telhas sanduíche. O projeto é de alta qualidade, melhorou e facilitou a montagem e instalação do material.",
     rating: 5,
