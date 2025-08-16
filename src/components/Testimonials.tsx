@@ -5,7 +5,7 @@ const Testimonials = () => {
     name: "Carlos Silva",
     company: "",
     role: "Diretor de Operações",
-    content: "A Steel Works entregou nosso galpão industrial 20% mais rápido que o prazo. Excelente qualidade e custo-benefício excepcional.",
+    content: "A equipe é competente, prestativa e comprometida em atender plenamente às necessidades do cliente, sempre priorizando a excelência em cada etapa. Recomendo sem dúvidas para quem busca um serviço seguro, confiável e de alto nível.",
     rating: 5,
     project: "Galpão Industrial 2.500m²"
   }, {
