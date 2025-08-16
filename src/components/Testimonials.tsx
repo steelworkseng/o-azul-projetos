@@ -7,7 +7,7 @@ const Testimonials = () => {
     role: "Diretor de Operações",
     content: "A equipe é competente, prestativa e comprometida em atender plenamente às necessidades do cliente, sempre priorizando a excelência em cada etapa. Recomendo sem dúvidas para quem busca um serviço seguro, confiável e de alto nível.",
     rating: 5,
-    project: "Galpão Industrial 2.500m²"
+    project: "Projeto de fabricação de cobertura metálica 268 m²"
   }, {
     name: "Marina Costa",
     company: "",
