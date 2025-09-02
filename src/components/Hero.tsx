@@ -27,9 +27,6 @@ const Hero = () => {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary hover-scale">
-              Ver Cases de Sucesso
-            </Button>
           </div>
 
           {/* Trust Indicators */}
