@@ -62,7 +62,7 @@ const Navbar = () => {
             </div>
             <Button variant="hero" size="sm" asChild>
               <a
-                href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0"
+                href="https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -114,7 +114,7 @@ const Navbar = () => {
               <div className="px-3 py-2">
                 <Button variant="hero" className="w-full" asChild>
                   <a
-                    href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0"
+                    href="https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

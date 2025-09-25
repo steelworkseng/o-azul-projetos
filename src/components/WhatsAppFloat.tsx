@@ -17,7 +17,7 @@ const WhatsAppFloat = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  const whatsappUrl = "https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0";
+  const whatsappUrl = "https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento";
 
   return (
     <div

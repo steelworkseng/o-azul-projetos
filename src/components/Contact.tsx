@@ -170,7 +170,7 @@ const Contact = () => {
                   Precisa de um orçamento urgente? Entre em contato via WhatsApp!
                 </p>
                 <Button variant="accent" size="sm" className="w-full" asChild>
-                  <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento" target="_blank" rel="noopener noreferrer">
                     WhatsApp: (85) 98185-1924
                   </a>
                 </Button>

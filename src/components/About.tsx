@@ -64,7 +64,7 @@ const About = () => {
             </div>
 
             <Button variant="hero" size="lg" className="mt-6" asChild>
-              <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+gostaria+de+conhecer+melhor+a+equipe+da+Steel+Works&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento" target="_blank" rel="noopener noreferrer">
                 Conheça Nossa Equipe
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>

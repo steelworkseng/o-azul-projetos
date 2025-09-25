@@ -86,7 +86,7 @@ const Services = () => {
                   ))}
                 </ul>
                 <Button variant="outline" className="w-full group" asChild>
-                  <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento" target="_blank" rel="noopener noreferrer">
                     Saiba Mais
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </a>
@@ -98,7 +98,7 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <Button variant="hero" size="lg" className="text-lg px-8 py-4" asChild>
-            <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+tenho+interesse+em+fazer+um+or%C3%A7amento%EF%BF%BD&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento" target="_blank" rel="noopener noreferrer">
               Solicitar Orçamento Personalizado
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>

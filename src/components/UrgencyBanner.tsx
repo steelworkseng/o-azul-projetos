@@ -41,7 +41,7 @@ const UrgencyBanner = () => {
 
           {/* CTA */}
           <Button variant="secondary" size="lg" className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90 shadow-xl hover-scale" asChild>
-            <a href="https://api.whatsapp.com/send/?phone=5585981851924&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+para+projeto+estrutural&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento" target="_blank" rel="noopener noreferrer">
               SOLICITAR ORÇAMENTO AGORA
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
