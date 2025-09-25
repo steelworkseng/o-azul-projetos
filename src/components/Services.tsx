@@ -23,19 +23,19 @@ const Services = () => {
       icon: Factory,
       title: "Galpões Industriais",
       description: "Desenvolvimento de galpões e estruturas industriais para diferentes tipos de produção.",
-      features: ["Pórticos metálicos", "Telhas termoacústicas", "Sistemas de ventilação", "Pontes rolantes"]
+      features: ["Pórticos metálicos", "Telhas termoacústicas"]
     },
     {
       icon: Warehouse,
       title: "Armazéns e Depósitos",
       description: "Estruturas otimizadas para armazenamento com máxima eficiência de espaço.",
-      features: ["Estruturas modulares", "Mezaninos metálicos", "Sistemas de prateleiras", "Docas de carga"]
+      features: ["Estruturas modulares", "Mezaninos metálicos"]
     },
     {
       icon: Home,
       title: "Estruturas Residenciais",
       description: "Soluções em steel frame e estruturas metálicas para casas e condomínios.",
-      features: ["Steel frame", "Lajes mistas", "Estruturas para piscinas", "Coberturas metálicas"]
+      features: ["Lajes mistas", "Coberturas metálicas"]
     },
     {
       icon: Calculator,
