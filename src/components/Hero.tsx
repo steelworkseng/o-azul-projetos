@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Award, Clock } from "lucide-react";
-import heroImage from "@/assets/hero-engineering.jpg";
+import heroImage from "@/assets/hero-steel-construction.png";
 const Hero = () => {
   return <section id="home" className="relative min-h-screen flex items-center">
       {/* Background Image */}
