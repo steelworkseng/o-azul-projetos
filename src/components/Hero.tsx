@@ -13,17 +13,16 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Reduza <span className="text-accent">30% dos custos</span> com
-            <span className="block"> Estruturas Metálicas </span>
-            Certificadas
+            <span className="text-accent">Projetos de Estruturas Metálicas</span>
+            <span className="block">Certificados e Sob Medida</span>
           </h1>
           
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">Projetos aprovados pelo CREA. Mais de 5 anos de experiência, mais de 50 projetos entregues com garantia total de qualidade.</p>
+          <p className="text-xl text-white/90 mb-8 leading-relaxed">Reduza até 30% nos custos da sua obra com projetos inteligentes, aprovados pelo CREA e desenvolvidos para máxima eficiência.</p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button variant="accent" size="lg" className="text-lg px-8 py-4 shadow-accent" asChild>
               <a href="https://wa.me/5585981851924?text=Olá,+tenho+interesse+em+solicitar+um+orçamento" target="_blank" rel="noopener noreferrer">
-                Orçamento GRATUITO
+                Solicite seu PROJETO agora
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
@@ -33,11 +32,11 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex items-center space-x-3 text-white">
               <div className="bg-accent/20 p-3 rounded-full">
-                <Shield className="w-6 h-6 text-accent" />
+                <Clock className="w-6 h-6 text-accent" />
               </div>
               <div>
-                <div className="font-semibold">100% Seguro</div>
-                <div className="text-sm text-white/70">Normas ABNT</div>
+                <div className="font-semibold">Mais de 5 anos</div>
+                <div className="text-sm text-white/70">de experiência em projetos</div>
               </div>
             </div>
             
@@ -46,18 +45,18 @@ const Hero = () => {
                 <Award className="w-6 h-6 text-accent" />
               </div>
               <div>
-                <div className="font-semibold">Certificado</div>
-                <div className="text-sm text-white/70">CREA Ativo</div>
+                <div className="font-semibold">+50 projetos</div>
+                <div className="text-sm text-white/70">entregues com excelência</div>
               </div>
             </div>
             
             <div className="flex items-center space-x-3 text-white">
               <div className="bg-accent/20 p-3 rounded-full">
-                <Clock className="w-6 h-6 text-accent" />
+                <Shield className="w-6 h-6 text-accent" />
               </div>
               <div>
-                <div className="font-semibold">5+ Anos</div>
-                <div className="text-sm text-white/70">Experiência</div>
+                <div className="font-semibold">Garantia total</div>
+                <div className="text-sm text-white/70">de qualidade e conformidade</div>
               </div>
             </div>
           </div>
